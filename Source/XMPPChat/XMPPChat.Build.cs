@@ -4,8 +4,8 @@ using UnrealBuildTool;
 
 public class XMPPChat : ModuleRules
 {
-	public XMPPChat(TargetInfo Target)
-	{
+	public XMPPChat(ReadOnlyTargetRules Target) : base(Target)
+    {
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
